@@ -8,7 +8,8 @@ import java.util.List;
 
 @Repository
 public interface TopicoRepository extends JpaRepository<Topico, Long> {
-    List<Topico>FindByCursoNome(String nome);
 
-    List<Topico> findbyTitulo(String nomeCurso);
+    List<Topico> findByCursoNome(String nome);
+    List<Topico> findByTitulo(String nomeCurso);
+
 }
