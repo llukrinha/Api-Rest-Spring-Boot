@@ -2,9 +2,6 @@ package br.com.alura.forum.modelo;
 
 import java.time.LocalDateTime;
 
-import br.com.alura.forum.model.Topico;
-import br.com.alura.forum.model.Usuario;
-
 public class Resposta {
 
 	private Long id;

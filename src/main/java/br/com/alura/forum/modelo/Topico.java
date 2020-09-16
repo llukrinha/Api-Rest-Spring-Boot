@@ -1,10 +1,8 @@
-package br.com.alura.forum.model;
+package br.com.alura.forum.modelo;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
-import br.com.alura.forum.modelo.Resposta;
 
 public class Topico {
 
