@@ -4,6 +4,7 @@ import br.com.alura.forum.modelo.StatusTopico;
 import br.com.alura.forum.modelo.Topico;
 import lombok.Data;
 
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
