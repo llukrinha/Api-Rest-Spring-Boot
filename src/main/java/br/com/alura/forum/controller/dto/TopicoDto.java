@@ -1,10 +1,14 @@
 package br.com.alura.forum.controller.dto;
 
 import br.com.alura.forum.modelo.Topico;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
 
+@Data
+@NoArgsConstructor
 public class TopicoDto {
 
     private Long id;
