@@ -12,10 +12,10 @@ import java.util.Date;
 @Service
 public class TokenService {
 
-    @Value("${forum.jet.expiration}")
+    @Value("${expiration}")
     private String expiration;
 
-    @Value("${forum.jet.secret}")
+    @Value("${secret}")
     private String secret;
 
     public String gerarToken(Authentication authentication) {
@@ -27,7 +27,7 @@ public class TokenService {
                 .setSubject(logado.getId().toString())
                 .setIssuedAt(hoje)
                 .setExpiration(dataExpiracao)
-                .signWith(SignatureAlgorithm.ES256,secret)
+                .signWith(SignatureAlgorithm.HS256, secret)
                 .compact();
     }
 }
